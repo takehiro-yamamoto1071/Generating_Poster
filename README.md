@@ -21,5 +21,4 @@ This allows you to verify the QR code or use it elsewhere.
 
 ## 3. How to Run
 
-
-  streamlit run src/app.py
+    streamlit run src/app.py
