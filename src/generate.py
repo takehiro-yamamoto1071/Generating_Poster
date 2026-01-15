@@ -399,19 +399,19 @@ class PosterGenerator:
 
 # --- Configuration & Execution ---
 if __name__ == "__main__":
-    uploaded_img = "/Users/Takehiro/.gemini/antigravity/brain/e8ee4bb3-08c0-4b1b-9dc9-8eeb980e453f/uploaded_image_1768374711884.jpg"
+    #uploaded_img = "/Users/Takehiro/.gemini/antigravity/brain/e8ee4bb3-08c0-4b1b-9dc9-8eeb980e453f/uploaded_image_1768374711884.jpg"
     
     config = {
         "texts": {
-            "title_en": "RYOICHI SHINKUMA Lab.",
-            "subtitle_en": "Design of Social information Network Systems",
-            "title_jp": "新熊研究室 見学会 & 交流会",
+            "title_en": "Lab.",
+            "subtitle_en": "***",
+            "title_jp": "交流会",
             "target_audience": "新2年生向け",
             "date": "3/30(月)",
             "welcome_msg": "見学会だけ交流会だけの参加も大歓迎!",
-            "location_line1": "芝浦工業大学 豊洲キャンパス",
-            "location_line2": "研究棟 14F 14Q32", 
-            "contact": "Contact : al22063@shibaura-it.ac.jp 山本"
+            "location_line1": "***大学",
+            "location_line2": "**F ***教室", 
+            "contact": "Contact : メールアドレス"
         },
         "images": {
             # Use the same image for all slots for demo
