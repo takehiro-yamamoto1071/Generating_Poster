@@ -1,28 +1,72 @@
-# Generating_Poster
-Poster Generator Walkthrough  
-UI Updates  
-## 1. Font Selection
-Change Fonts: You can now select any system font installed on your Mac!
-Look for the "Select Font Family" dropdown in the "Font Settings" section.
-Note: Ensure the selected font supports Japanese characters if using Japanese text.
+# Generating Poster (イベント用のポスターを生成するためのツール)
 
-## 2. QR Code Download
-Download QR Only: A new button has been added next to the poster download.
-This allows you to verify the QR code or use it elsewhere.
+研究室見学会やイベント用のポスターを簡単に作成・カスタマイズできるPythonツールです。
+Streamlitを使用したGUIにより、ブラウザ上で直感的にレイアウトやテキストを編集できます。
 
-### All Features
-- Real-time Preview
-- Layout fine-tuning
-- Image Zooming
-- Font Size & Spacing Adjustment
-- Font Family Selection
-- Custom Text & Image Blocks
-- Standalone QR Download
+## 特徴
 
-## 3. How to Run
+- **リアルタイムプレビュー**: 編集内容が即座にポスターに反映されます。
+- **ドラッグ&ドロップ画像配置**: 5つのメインスロット（四隅 + 中央）に画像をアップロードできます。
+- **自由自在なレイアウト**: 各画像の配置（X, Y）、サイズ（W, H）、拡大率（Scale）を微調整可能。
+- **高度なテキスト編集**:
+    - フォントサイズの変更
+    - 文字間隔（Tracking）の調整
+    - 任意のテキストブロックの追加・配置
+    - システムフォントの選択機能
+- **QRコード生成**: URLを入力するだけでQRコードを自動生成・配置。QR単体のダウンロードも可能。
+- **高解像度出力**: 印刷に耐えうる高解像度PNGを出力します。
 
-    streamlit run src/app.py
+## 必要要件
 
-## 4. Images
+- Python 3.8以上
+- 以下のPythonライブラリ:
+    - `streamlit`
+    - `Pillow`
+    - `qrcode`
+
+## インストール
+
+1. このリポジトリをクローンまたはダウンロードします。
+2. 必要なライブラリをインストールします:
+
+```bash
+pip install streamlit Pillow qrcode
+```
+
+## 使い方
+
+1. ターミナルでプロジェクトディレクトリに移動し、以下のコマンドを実行してアプリケーションを起動します:
+
+```bash
+streamlit run src/app.py
+```
+
+2. ブラウザが自動的に開き、UIが表示されます（通常は `http://localhost:8501`）。
+
+3. **サイドバー**から以下の設定を行います:
+    - **Texts**: 研究室名、日付、場所などの基本情報を入力。
+    - **Font Settings**: フォントの種類、サイズ、文字間隔を調整。
+    - **Custom Texts**: 必要に応じて自由なテキストを追加。
+    - **Custom Images**: ロゴや装飾など、任意の画像を追加配置。
+    - **QR Code**: 申し込みフォーム等のURLを設定。
+
+4. **メインエリア**で画像をアップロードし、それぞれの配置やズームを調整します。
+
+5. プレビューを確認し、問題なければ「**Download Poster**」ボタンで保存します。
+
+## ディレクトリ構成
+
+- `src/`: ソースコード
+    - `app.py`: Streamlit GUIアプリケーション
+    - `generate.py`: ポスター生成ロジック（`PosterGenerator`クラス）
+    - `resize.py`: 画像リサイズ用ユーティリティ（CLI用）
+- `images/`: 画像素材（任意）
+- `README.md`: このファイル
+
+## ライセンス
+
+This project is for internal use.
+
+## 引用画像(Images)
 
     https://drive.google.com/drive/folders/1bGe6qXhR2AyBRw_23z8cD1a3282rmAY8?usp=sharing
