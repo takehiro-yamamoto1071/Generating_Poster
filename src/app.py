@@ -11,15 +11,15 @@ st.title("Poster Generator UI")
 # --- Sidebar: Configuration ---
 st.sidebar.header("1. Texts")
 texts = {}
-texts['title_en'] = st.sidebar.text_input("Lab Name (EN)", "RYOICHI SHINKUMA Lab.")
-texts['subtitle_en'] = st.sidebar.text_input("Subtitle (EN)", "Design of Social information Network Systems")
-texts['title_jp'] = st.sidebar.text_input("Main Title (JP)", "新熊研究室 見学会 & 交流会")
-texts['target_audience'] = st.sidebar.text_input("Target Audience", "新2年生向け")
-texts['date'] = st.sidebar.text_input("Date", "3/30(月)")
-texts['welcome_msg'] = st.sidebar.text_input("Welcome Msg", "見学会だけ交流会だけの参加も大歓迎!")
-texts['location_line1'] = st.sidebar.text_input("Location 1", "芝浦工業大学 豊洲キャンパス")
-texts['location_line2'] = st.sidebar.text_input("Location 2", "研究棟 14F 14Q32")
-texts['contact'] = st.sidebar.text_input("Contact", "Contact : a122063@shibaura-it.ac.jp 山本")
+texts['title_en'] = st.sidebar.text_input("Lab Name (EN)", "")
+texts['subtitle_en'] = st.sidebar.text_input("Subtitle (EN)", "")
+texts['title_jp'] = st.sidebar.text_input("Main Title (JP)", "")
+texts['target_audience'] = st.sidebar.text_input("Target Audience", "")
+texts['date'] = st.sidebar.text_input("Date", "")
+texts['welcome_msg'] = st.sidebar.text_input("Welcome Msg", "")
+texts['location_line1'] = st.sidebar.text_input("Location 1", "")
+texts['location_line2'] = st.sidebar.text_input("Location 2", "")
+texts['contact'] = st.sidebar.text_input("Contact", "")
 
 st.sidebar.header("2. Font Settings (Size & Spacing)")
 
@@ -143,7 +143,7 @@ for i, block in enumerate(st.session_state.custom_image_blocks):
             custom_images_config.append(block)
 
 st.sidebar.header("5. QR Code")
-qr_url = st.sidebar.text_input("QR URL", "https://forms.gle/VjpD3PCtuzxPBawz7")
+qr_url = st.sidebar.text_input("QR URL", "")
 
 # --- Layout Configuration ---
 st.write("### Image Layout & Uploads")
