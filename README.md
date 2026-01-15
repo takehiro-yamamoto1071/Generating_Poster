@@ -22,3 +22,7 @@ This allows you to verify the QR code or use it elsewhere.
 ## 3. How to Run
 
     streamlit run src/app.py
+
+## 4. Images
+
+    https://drive.google.com/drive/folders/1bGe6qXhR2AyBRw_23z8cD1a3282rmAY8?usp=sharing
