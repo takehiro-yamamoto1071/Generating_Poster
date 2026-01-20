@@ -399,7 +399,6 @@ class PosterGenerator:
 
 # --- Configuration & Execution ---
 if __name__ == "__main__":
-    #uploaded_img = "/Users/Takehiro/.gemini/antigravity/brain/e8ee4bb3-08c0-4b1b-9dc9-8eeb980e453f/uploaded_image_1768374711884.jpg"
     
     config = {
         "texts": {
